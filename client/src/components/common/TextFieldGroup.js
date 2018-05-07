@@ -2,7 +2,6 @@ import React from 'react';
 import classnames from 'classnames';
 import PropTypes from 'prop-types';
 
-
 const TextFieldGroup = ({
   name,
   placeholder,
@@ -27,7 +26,7 @@ const TextFieldGroup = ({
         onChange={onChange}
         disbled={disabled}
       />
-    {info && <small className="form-text text-muted">{info}</small>}
+      {info && <small className="form-text text-muted">{info}</small>}
       {error && (<div className="invalid-feedback">{error}</div>)}
     </div>
   );
