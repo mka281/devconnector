@@ -97,7 +97,7 @@ class EditProfile extends Component {
       location: this.state.location,
       status: this.state.status,
       skills: this.state.skills,
-      githubusername: this.state.githubusername,
+      githubUsername: this.state.githubUsername,
       bio: this.state.bio,
       twitter: this.state.twitter,
       facebook: this.state.facebook,
@@ -107,7 +107,6 @@ class EditProfile extends Component {
     };
 
     this.props.createProfile(profileData, this.props.history);
-    this.props.history.push("/dashboard");
   };
 
   onChange = e => {
@@ -249,10 +248,10 @@ class EditProfile extends Component {
                 <br />
                 <TextFieldGroup
                   placeholder="Github Username"
-                  name="githubusername"
+                  name="githubUsername"
                   value={this.state.githubUsername}
                   onChange={this.onChange}
-                  error={errors.githubusername}
+                  error={errors.githubUsername}
                   info="If you want your latest repos and a Github link, include your username"
                 />
                 <br />
