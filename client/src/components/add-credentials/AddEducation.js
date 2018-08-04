@@ -45,6 +45,13 @@ class AddEducation extends Component {
     this.setState({ [e.target.name]: e.target.value });
   };
 
+  onCheck = e => {
+    this.setState({
+      disabled: !this.state.disabled,
+      current: !this.state.current
+    });
+  };
+
   render() {
     const { errors } = this.state;
 
